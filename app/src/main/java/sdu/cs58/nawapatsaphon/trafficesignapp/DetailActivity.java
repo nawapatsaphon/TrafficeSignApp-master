@@ -2,6 +2,7 @@ package sdu.cs58.nawapatsaphon.trafficesignapp;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -28,4 +29,8 @@ public class DetailActivity extends AppCompatActivity {
 
     }//end onCreate Method
 
+    public void clickBack(View view)
+    {
+        finish();
+    }//end click back method
 }//end Class
