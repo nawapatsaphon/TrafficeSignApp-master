@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
 
     }//End Oncreate Method
 
-    public void clickLink(View view)
+    public void clickLink(View view)//Link ปุ่มกดไปหน้า WWW.
     {
         Intent linkIntent = new Intent(Intent.ACTION_VIEW);
         linkIntent.setData(Uri.parse("https://www.dlt.go.th/th/"));
@@ -56,4 +56,8 @@ public class MainActivity extends AppCompatActivity {
     }//end clickLink Method
 
 
+    public void clickAboutMe(View view) {
+        Intent aboutmeIntent = new Intent(MainActivity.this,AboutMeActivity.class);
+        startActivity(aboutmeIntent);
+    }//end clickaboutme
 }//End Class

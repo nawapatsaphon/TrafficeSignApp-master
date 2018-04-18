@@ -28,6 +28,7 @@
         android:id="@+id/btnAboutMe"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
+        android:onClick="clickAboutMe"
         android:text="About Me"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/btnMoreInfo"
