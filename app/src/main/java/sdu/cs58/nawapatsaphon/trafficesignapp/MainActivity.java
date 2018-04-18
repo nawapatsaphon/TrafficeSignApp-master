@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     public void clickLink(View view)//Link ปุ่มกดไปหน้า WWW.
     {
         Intent linkIntent = new Intent(Intent.ACTION_VIEW);
-        linkIntent.setData(Uri.parse("https://www.dlt.go.th/th/"));
+        linkIntent.setData(Uri.parse("https://www.facebook.com/nawapatsaphon.letsitthithaphanya"));
         startActivity(linkIntent);
 
     }//end clickLink Method
