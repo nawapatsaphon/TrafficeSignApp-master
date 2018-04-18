@@ -37,14 +37,20 @@ public class AboutMeActivity extends AppCompatActivity {
     }
 
     public void clickMobile(View view) {
-        Intent mobileIIntent = new Intent(Intent.ACTION_DIAL);
-        mobileIIntent.setData(Uri.parse("tel:0908877944"));
-        startActivity(mobileIIntent);
+        Intent mobileIntent = new Intent(Intent.ACTION_DIAL);
+        mobileIntent.setData(Uri.parse("tel:0908877944"));
+        startActivity(mobileIntent);
     }
 
     public void clickMap(View view) {
         String lat="3.776233";
-        String lag="100.510757";
+        String lng="100.510757";
         String label = "มหาวิทยาลัยสวนดุสิต";
+
+        Uri location = Uri.parse("http://maps.google.com/maps?z=10&q=loc:" + lat + "," + lng + "(" + label + ")");
+        Intent mapIntent = new Intent(Intent.ACTION_VIEW, location);
+        //mapIntent.setPackage("com.google.android.apps.maps");//ใช้เทสบน จีนีโมชั่นไม่ได้
+        startActivity(mapIntent);
+
     }
 }//end class
